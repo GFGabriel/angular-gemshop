@@ -1,0 +1,39 @@
+<ul>
+  <h3>Reviews</h3>
+  <select ng-model='sortData'>
+    <option value="">Sort By</option>
+    <option value="-rating">Rating Desc</option>
+    <option value="rating">Rating Asc</option>
+    <option value="-createdOn">Date Desc</option>
+    <option value="createdOn">Date Asc</option>
+  </select>
+  <li ng-repeat='review in product.reviews | orderBy: sortData'>
+    <blockquote>
+      <strong>{{review.stars | stars}}</strong> <br>
+      {{review.body}} <br>
+      <cite>-{{review.author}} on {{review.createdOn | date}}</cite>
+      <p>Review Rating: {{review.rating}}
+        <button type="button" class="btn btn-default" aria-label="Left Align">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" ng-click='reviewCtrl.changeRatingUp(review)'></span>
+        </button>
+        <button type="button" class="btn btn-default" aria-label="Left Align">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true" ng-click='reviewCtrl.changeRatingDown(review)'></span>
+        </button>
+      </p>
+    </blockquote>
+  </li>
+</ul>
+
+<form name='reviewForm' class="reviewForm" ng-submit='reviewForm.$valid && reviewCtrl.addReview(product)' novalidate>
+  <blockquote>
+    <strong>{{reviewCtrl.review.stars | stars}}</strong> <br>
+    {{reviewCtrl.review.body}} <br>
+    <cite>-{{reviewCtrl.review.author}} on {{reviewCtrl.createdOn | date}}</cite>
+  </blockquote>
+  <select ng-model='reviewCtrl.review.stars' ng-options='stars for stars in [5,4,3,2,1]' required>
+    <option value="">Rate the product (Required)</option>
+  </select>
+  <textarea placeholder="Please write a review for this gem..." ng-model='reviewCtrl.review.body'></textarea>
+  <input type="email" placeholder="Please enter your email address (Required)..." ng-model='reviewCtrl.review.author' required>
+  <input type="submit" name="" value="Submit Review">
+</form>

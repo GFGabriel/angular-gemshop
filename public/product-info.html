@@ -1,0 +1,9 @@
+<label>Filter: <input type='text' ng-model='searchBox' placeholder='Enter gem name...'></label>
+<div class="list-group-item" ng-repeat="product in store.products | filter: {name: searchBox}">
+  <h3>
+    {{product.name}}
+    <em class="pull-right">{{product.price | currency}}</em>
+  </h3>
+  <product-gallery></product-gallery>
+  <product-tabs></product-tabs>
+</div>

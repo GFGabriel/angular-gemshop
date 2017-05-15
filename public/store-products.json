@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Ametrine",
+    "description": "Quartz which occurs in bands of yellow and purple has been given the name of ametrine (amethyst + citrine). Initially cutters favored windowed emerald shapes with a 50/50 split of colors, and much of the rough is still cut this way. More recently, however, some cutters have begun to cut a variety of shapes, many of which create internal reflections that blend the yellow and purple into attractive shades of rosy gold and mauve, or create mosaic-like flashes of both yellow and purple.",
+    "shine": 8,
+    "price": 110.50,
+    "rarity": 7,
+    "color": "Purple/Yellow",
+    "faces": 14,
+    "images": [
+      "images/ametrine01.jpg",
+      "images/ametrine02.jpg",
+      "images/ametrine03.jpg",
+      "images/ametrine04.jpg",
+      "images/ametrine05.jpg"
+    ],
+    "reviews": [{
+      "rating": 2,
+      "stars": 5,
+      "body": "I love this gem!",
+      "author": "joe@example.org",
+      "createdOn": 1397490980837
+    }, {
+      "rating": 1,
+      "stars": 1,
+      "body": "This gem sucks.",
+      "author": "tim@example.org",
+      "createdOn": 1397490980837
+    }]
+  },
+  {
+    "name": "Emerald",
+    "description": "Emerald is the most precious stone in the beryl group. The wonderful green color of emerald is unparalleled in the gem world. Most of the finest emerald available today is sourced from either Colombia, Zambia or Afghanistan. Emerald, by definition, is a medium or darker green to blue green beryl, in which the green color is derived from impurities of chromium, vanadium, or a combination of both. The most popular and valuable color is a slightly bluish green in a medium dark tone with strong to vivid saturation. Clarity is important, but inclusions are tolerated more in emerald than virtually any other gem.",
+    "shine": 9,
+    "price": 22.90,
+    "rarity": 6,
+    "color": "#EEE",
+    "faces": 12,
+    "images": [
+      "images/emerald01.jpg",
+      "images/emerald02.jpg",
+      "images/emerald03.jpg",
+      "images/emerald04.jpg",
+      "images/emerald05.jpg"
+    ],
+    "reviews": [{
+      "rating": 6,
+      "stars": 3,
+      "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+      "author": "JimmyDean@example.org",
+      "createdOn": 1397490980837
+    }, {
+      "rating": 2,
+      "stars": 4,
+      "body": "Any gem with 12 faces is for me!",
+      "author": "gemsRock@example.org",
+      "createdOn": 1397490980837
+    }]
+  },
+  {
+    "name": "Morganite",
+    "description": "The pink form of beryl was named morganite, after the American banker and collector J.P. Morgan. A soft pink to violet, morganite belongs to the same family as emerald and aquamarine. Like the other beryls, morganite is quite hard (7.5 to 8 on the Mohs scale) but also rather brittle.",
+    "shine": 70,
+    "price": 1100,
+    "rarity": 2,
+    "color": "Pink",
+    "faces": 6,
+    "images": [
+      "images/morganite01.jpg",
+      "images/morganite02.jpg",
+      "images/morganite03.jpg",
+      "images/morganite04.jpg",
+      "images/morganite05.jpg"
+    ],
+    "reviews": [{
+      "rating": 1,
+      "stars": 1,
+      "body": "This gem is WAY too expensive for its rarity value.",
+      "author": "turtleguyy@example.org",
+      "createdOn": 1397490980837
+    }, {
+      "rating": 5,
+      "stars": 1,
+      "body": "BTW: High Shine != High Quality.",
+      "author": "LouisW407@example.org",
+      "createdOn": 1397490980837
+    }, {
+      "rating": 3,
+      "stars": 1,
+      "body": "Don't waste your rubles!",
+      "author": "nat@example.org",
+      "createdOn": 1397490980837
+    }]
+  }
+]

@@ -1,0 +1,8 @@
+<section ng-show="product.images.length">
+  <img ng-src="{{product.images[gallery.current]}}" alt='broken' class='mainImage'/>
+  <ul class="list-inline thumbs">
+    <li class="thumbnail smallThumbs" ng-repeat="image in product.images">
+      <img ng-src="{{image}}" ng-click='gallery.setCurrent($index)' />
+    </li>
+  </ul>
+</section>
